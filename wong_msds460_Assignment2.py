@@ -15,21 +15,21 @@ import matplotlib.pyplot as plt
 from pulp import LpMinimize, LpProblem, LpVariable, lpSum, value
 
 tasks = {
-    "A": {"name": "Describe product", "best_case": 1, "expected": 2, "worst_case": 3},
-    "B": {"name": "Develop marketing strategy", "best_case": 2, "expected": 4, "worst_case": 6},
-    "C": {"name": "Design brochure", "best_case": 1, "expected": 3, "worst_case": 5},
-    "D1": {"name": "Requirements analysis", "best_case": 2, "expected": 4, "worst_case": 6},
-    "D2": {"name": "Software design", "best_case": 3, "expected": 5, "worst_case": 7},
-    "D3": {"name": "System design", "best_case": 3, "expected": 5, "worst_case": 7},
-    "D4": {"name": "Coding", "best_case": 5, "expected": 10, "worst_case": 15},
-    "D5": {"name": "Write documentation", "best_case": 2, "expected": 4, "worst_case": 6},
-    "D6": {"name": "Unit testing", "best_case": 2, "expected": 4, "worst_case": 6},
-    "D7": {"name": "System testing", "best_case": 3, "expected": 5, "worst_case": 7},
-    "D8": {"name": "Package deliverables", "best_case": 1, "expected": 2, "worst_case": 3},
-    "E": {"name": "Survey potential market", "best_case": 3, "expected": 5, "worst_case": 7},
-    "F": {"name": "Develop pricing plan", "best_case": 2, "expected": 4, "worst_case": 6},
-    "G": {"name": "Develop implementation plan", "best_case": 2, "expected": 4, "worst_case": 6},
-    "H": {"name": "Write client proposal", "best_case": 1, "expected": 2, "worst_case": 3}
+    "A": {"name": "Describe product", "best_case": 10, "expected": 18, "worst_case": 25},
+    "B": {"name": "Develop marketing strategy", "best_case": 6, "expected": 20, "worst_case": 22},
+    "C": {"name": "Design brochure", "best_case": 3, "expected": 6, "worst_case": 10},
+    "D1": {"name": "Requirements analysis", "best_case": 15, "expected": 30, "worst_case": 60},
+    "D2": {"name": "Software design", "best_case": 10, "expected": 15, "worst_case": 20},
+    "D3": {"name": "System design", "best_case": 9, "expected": 10, "worst_case": 18},
+    "D4": {"name": "Coding", "best_case": 65, "expected": 100, "worst_case": 170},
+    "D5": {"name": "Write documentation", "best_case": 25, "expected": 30, "worst_case": 50},
+    "D6": {"name": "Unit testing", "best_case": 25, "expected": 50, "worst_case": 72},
+    "D7": {"name": "System testing", "best_case": 20, "expected": 23, "worst_case": 30},
+    "D8": {"name": "Package deliverables", "best_case": 6, "expected": 10, "worst_case": 20},
+    "E": {"name": "Survey potential market", "best_case": 20, "expected": 50, "worst_case": 70},
+    "F": {"name": "Develop pricing plan", "best_case": 10, "expected": 15, "worst_case": 20},
+    "G": {"name": "Develop implementation plan", "best_case": 15, "expected": 26, "worst_case": 35},
+    "H": {"name": "Write client proposal", "best_case": 9, "expected": 15, "worst_case": 20}
 }
 
 
