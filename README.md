@@ -27,7 +27,7 @@ Determine best-case, expected, and worst-case estimates for the number of hours 
 **Part 5: Overview.** Write an overview of the project for the prospective client. Ignoring costs associated with software licensing and cloud hosing, what would you charge for the project? When would you expect to be delivering the product prototype? How soon could you deliver the product prototype if additional independent contractors were added to the mix? As part of your discussion, consider other methods for dealing with uncertainty associated with the completion of activities. For example, would you consider using stochastic programming and/or Monte Carlo simulation?
 
 ## Part 1: Problem Setup
-The following assignment is a Critical Path problem where the objective of the problem is to find the minimal amount of time to complete all tasks deemed necessary for the completion and successful delivery of a restaurant reeccomendation applcation. After each essential task was identified, time estimates in terms of hours and preceding steps. The entire tablle used to specifiy the project details can be found below:
+The following assignment is a Critical Path problem where the objective of the problem is to find the minimal amount of time to complete all tasks deemed necessary for the completion and successful delivery of a restaurant reeccomendation applcation. After each essential task was identified, time estimates in terms of hours and preceding steps. The entire tablle used to specifiy the project details can be in [WONG_project-plan-v003.xlsx](WONG_project-plan-v003.xlsx) found or below:
 
 | taskID | task                        | predecessorTaskIDs | bestCaseHours | expectedHours | worstCaseHours | projectManager | frontendDeveloper | backendDeveloper | dataScientist | dataEngineer |
 |--------|-----------------------------|--------------------|---------------|---------------|----------------|----------------|-------------------|------------------|---------------|--------------|
@@ -48,7 +48,13 @@ The following assignment is a Critical Path problem where the objective of the p
 | G      | Develop implementation plan | A, D8              | 15            | 26            | 35             |                |                   |                  |               | x            |
 | H      | Write client proposal       | F, G               | 9             | 15            | 20             | x              |                   |                  |               |              |
 
+A visual representation of workflow of each task can be seen below in this [Visio diagram](Wong_Assignment4.vsdx):
+![image](https://github.com/user-attachments/assets/c7f55a7d-7863-497d-bf16-0006b4f54765)
+
+The cost of labor per hour was estimated to be $800/ hr (representing the time from project start to finish. This does not represent the sum of all hours worked by each project member).
+
 ## Part 2: Model Specification
+Given the information above, a model was developed in Python utilizing the PuLP package to model the project timeline as a linear program. Furthermore, matplotlib was used to develop Gantt charts based off the 3 scenarios. The entire code can be found in this repository ([.pf file](wong_msds460_Assignment2.py)/[.ipynb file](Wong_MSDS460_Assignment2.ipynb)).
 
 ## Part 3: Programming
 
