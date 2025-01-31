@@ -198,3 +198,15 @@ Total Time/Cost: 452 hours / $271,000
 Based off these solutions, the project could take anywhere from 19 to 51 days to complete (assuming 9-hour work days)
 
 ## Part 5: Overview
+_Write an overview of the project for the prospective client. Ignoring costs associated with software licensing and cloud hosing, what would you charge for the project?_
+Here is an example writeup of what the overview could look like:
+
+Hello,
+
+We have finished developing a project timeline for your restaurant recommender system along with key timelines. Based off current work estimates, we believe that the project will take close to 300 billable hours putting the total estimated cost of this project endeavor to just around $200,000. It should be noted that while not expected, significant delays could increase the cost of the project by 50%. Estimated The estimated delivery time will be approximately 1 month. Depending on the needs of your organization, hiring extra help could be an option to increase the speed of delivery.
+
+Given the current project team of 5, adding independent contractors could be used to speed up the delivery of the application. Given a single extra worker (which would mean an reduction in ~17% of work per team member), you could expect to shave off approximately 1 business week.
+
+---
+
+While linear programming was used in this scenario to simualte a project timeline, there were a number of key assumptions that may decrease the validity of the estimated timeline. For example, if the probability of a task falling behind or being ahead of schedule is already known, then this is a scenario in which a montecarlo simulaiton may be more appropriate to give a better idea of how long a project will take. Similarly, stochastic programming be more suitable if the modeling prediction will need to adapt to new conditions/ data as time goes on. This may be a more suitable approach if the project timeline is regularly updated as the project progresses (I am thinking this could be especially useful in scenarios in which the project may take longer than a few months, potentially spanning years).
